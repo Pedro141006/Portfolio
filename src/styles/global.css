@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+/* variaveis */
+
+:root {
+  --primary-text-color: #000000;
+  --background-primary-color: #ffffff;
+  --primary-border-color: #000000;
+}
+
+body {
+  background-color: var(--background-primary-color);
+}
+
 /* header */
 
 #header {
@@ -15,13 +27,13 @@
   height: 8vh;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid var(--primary-border-color);
 }
 
 .divider {
   height: 30px;
   width: 2px;
-  border: 1px solid #000000;
+  border: 1px solid var(--primary-border-color);
   margin-right: 1rem;
 }
 
@@ -55,6 +67,11 @@
   font-size: 32px;
 }
 
+.text {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
 .btn-linkedin {
   text-decoration: none;
   color: #ffffff;
@@ -62,5 +79,23 @@
   padding: 8px 24px;
   border-radius: 12px;
   align-self: start;
+  font-size: 24px;
+  box-shadow: 0px 7px 23px -8px rgba(0, 0, 0, 0.75);
+}
+
+.dividerSection {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(1, 22, 39, 1) 9%,
+    rgba(9, 9, 121, 1) 51%,
+    rgba(99, 32, 238, 1) 100%
+  );
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.goal {
   font-size: 24px;
 }
