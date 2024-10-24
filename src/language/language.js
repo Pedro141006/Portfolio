@@ -42,8 +42,9 @@ let $title_project = document.querySelector('.someProjectsTitle')
 let $projectNews = document.querySelector('.description-1')
 let $projectSpace = document.querySelector('.description-2')
 let $projectShop = document.querySelector('.description-3')
-
 let $selectLang = document.getElementById('languages')
+let $btn_codes = document.querySelectorAll('.code')
+let $btn_views = document.querySelectorAll('.view')
 
 $selectLang.addEventListener('change', text => {
   setLanguage(text.target.value)
@@ -61,6 +62,8 @@ const setLanguage = text => {
     $projectNews.innerHTML = language.lang.en.title_project_name_news
     $projectSpace.innerHTML = language.lang.en.title_project_name_space
     $projectShop.innerHTML = language.lang.en.title_project_name_shop
+    $btn_views.forEach(a => (a.innerHTML = language.lang.en.btns_view))
+    $btn_codes.forEach(a => (a.innerHTML = language.lang.en.btns_code))
   } else if (text == 'pt-br') {
     $intro.innerHTML = language.lang.pt_br.introd
     $hello.innerHTML = language.lang.pt_br.hello
@@ -72,5 +75,7 @@ const setLanguage = text => {
     $projectNews.innerHTML = language.lang.pt_br.title_project_name_news
     $projectSpace.innerHTML = language.lang.pt_br.title_project_name_space
     $projectShop.innerHTML = language.lang.pt_br.title_project_name_shop
+    $btn_codes.forEach(a => (a.innerHTML = language.lang.pt_br.btns_code))
+    $btn_views.forEach(a => (a.innerHTML = language.lang.pt_br.btns_view))
   }
 }
