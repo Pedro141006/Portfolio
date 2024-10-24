@@ -101,3 +101,67 @@ body {
 .goal {
   font-size: 24px;
 }
+
+/* 
+<div class="projects">
+    <div class="cardProject">
+        
+        <div class="img-project"></div>
+        <div class="info-projects"></div>
+        
+        <div class="optionsButtons">
+            <button class="code">Code</button>
+            <button class="view">View</button>
+        </div>
+    </div>
+</div>
+*/
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cardProject {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color: #363636;
+  border-radius: 12px;
+  gap: 12px;
+  color: #ffffff;
+}
+
+.info-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.title-project {
+  font-size: 18px;
+}
+
+.optionsButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.code,
+.view {
+  padding: 6px 12px;
+  border-radius: 12px;
+  border: none;
+  color: #ffffff;
+}
+
+.code {
+  background-color: #5e5e5e;
+}
+
+.view {
+  background-color: #0057ff;
+}
