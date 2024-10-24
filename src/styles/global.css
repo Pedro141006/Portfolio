@@ -50,6 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 24px;
+  color: var(--primary-text-color);
 }
 
 .text-container {
@@ -93,8 +94,8 @@ body {
     rgba(9, 9, 121, 1) 51%,
     rgba(99, 32, 238, 1) 100%
   );
-  margin-top: 18px;
-  margin-bottom: 18px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .goal {
