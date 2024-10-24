@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
 /* variaveis */
 
 :root {
@@ -120,6 +123,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .cardProject {
@@ -160,8 +165,16 @@ body {
 
 .code {
   background-color: #5e5e5e;
+  cursor: pointer;
+  &:hover {
+    background-color: #444444;
+  }
 }
 
 .view {
   background-color: #0057ff;
+  cursor: pointer;
+  &:hover {
+    background-color: #0040c0;
+  }
 }
