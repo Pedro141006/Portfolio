@@ -68,8 +68,8 @@ body {
 }
 
 .text {
-  margin-bottom: 8px;
-  margin-top: 8px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .btn-linkedin {
@@ -81,6 +81,7 @@ body {
   align-self: start;
   font-size: 24px;
   box-shadow: 0px 7px 23px -8px rgba(0, 0, 0, 0.75);
+  margin-bottom: 2rem;
 }
 
 .dividerSection {
