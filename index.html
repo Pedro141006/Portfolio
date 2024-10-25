@@ -6,19 +6,27 @@
     <title>Pedro - Portifolio</title>
     <link rel="stylesheet" href="src/styles/global.css" />
     <script src="src/language/language.js" defer></script>
+    <script src="src/js/switch.js" defer></script>
   </head>
   <body data-theme="white" id="body">
     <header id="header">
       <div class="container-menu">
         <img src="src/images/Logo.png" alt="" />
         <div class="divider"></div>
-        <h2>Menu</h2>
+        <!-- <h2>Menu</h2> -->
       </div>
 
-      <select name="languages" id="languages">
-        <option value="en">en</option>
-        <option value="pt-br">pt-br</option>
-      </select>
+      <div class="container-menu">
+        <select name="languages" id="languages">
+          <option value="en">English</option>
+          <option value="pt-br">Portuguese</option>
+        </select>
+
+        <label class="switch">
+          <input type="checkbox" checked class="switch_button" />
+          <span class="slider"></span>
+        </label>
+      </div>
     </header>
     <main id="main">
       <section class="container-1">
@@ -148,6 +156,17 @@
         </div>
       </section>
       <div class="dividerSection"></div>
+      <section class="container-5">
+        <h3 class="contact">Contact:</h3>
+        <!-- liinkedin -->
+        <a href="https://www.linkedin.com/in/pedro-h-p-franca/" target="_blank">
+          <img src="src/images/LinkedIn.png" alt="linkedin" class="icon" />
+        </a>
+        <!-- github -->
+        <a href="https://github.com/Pedro141006" target="_blank">
+          <img src="src/images/GitHub.png" alt="github" class="icon" />
+        </a>
+      </section>
     </main>
   </body>
 </html>

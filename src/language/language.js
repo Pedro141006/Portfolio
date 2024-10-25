@@ -8,11 +8,12 @@ const language = {
       title_goal: 'My goal:',
       title_tech: 'My technologies:',
       title_projects: 'Some projects:',
-      title_project_name_space: 'Made with Bootstrap <br /> & Sass',
+      title_project_name_space: 'Made with Bootstrap <br /> & Sass.',
       title_project_name_shop: 'Made with React & JSX.',
       title_project_name_news: 'Made with HTML & CSS.',
       btns_code: 'Code',
-      btns_view: 'View'
+      btns_view: 'View',
+      contact: 'Contact:'
     },
     pt_br: {
       hello: 'Olá! <br /> Eu sou Pedro',
@@ -23,11 +24,12 @@ const language = {
       title_goal: 'Meu objetivo:',
       title_tech: 'Minhas tecnologias:',
       title_projects: 'Alguns projetos:',
-      title_project_name_space: 'Feito em Bootstrap <br/> & Sass',
-      title_project_name_shop: 'Feito em React & JSX',
-      title_project_name_news: 'Feito em HTML e CSS',
+      title_project_name_space: 'Feito em Bootstrap <br/> & Sass.',
+      title_project_name_shop: 'Feito em React & JSX.',
+      title_project_name_news: 'Feito em HTML e CSS.',
       btns_code: 'Código',
-      btns_view: 'Ver'
+      btns_view: 'Ver',
+      contact: 'Contatos:'
     }
   }
 }
@@ -45,6 +47,7 @@ let $projectShop = document.querySelector('.description-3')
 let $selectLang = document.getElementById('languages')
 let $btn_codes = document.querySelectorAll('.code')
 let $btn_views = document.querySelectorAll('.view')
+let $contact = document.querySelector('.contact')
 
 $selectLang.addEventListener('change', text => {
   setLanguage(text.target.value)
@@ -62,6 +65,7 @@ const setLanguage = text => {
     $projectNews.innerHTML = language.lang.en.title_project_name_news
     $projectSpace.innerHTML = language.lang.en.title_project_name_space
     $projectShop.innerHTML = language.lang.en.title_project_name_shop
+    $contact.innerHTML = language.lang.en.contact
     $btn_views.forEach(a => (a.innerHTML = language.lang.en.btns_view))
     $btn_codes.forEach(a => (a.innerHTML = language.lang.en.btns_code))
   } else if (text == 'pt-br') {
@@ -75,6 +79,7 @@ const setLanguage = text => {
     $projectNews.innerHTML = language.lang.pt_br.title_project_name_news
     $projectSpace.innerHTML = language.lang.pt_br.title_project_name_space
     $projectShop.innerHTML = language.lang.pt_br.title_project_name_shop
+    $contact.innerHTML = language.lang.pt_br.contact
     $btn_codes.forEach(a => (a.innerHTML = language.lang.pt_br.btns_code))
     $btn_views.forEach(a => (a.innerHTML = language.lang.pt_br.btns_view))
   }
